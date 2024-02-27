@@ -1,0 +1,64 @@
+.spinner {
+  font-size: 140px;
+}
+
+.spinner:after {
+  content: '◌';
+  animation: rotate 2s linear infinite;
+  display: inline-block;
+}
+
+#chart {
+  border: 1px solid black;
+}
+
+.buttonSection {
+  margin: 1em;
+  display: flex;
+}
+
+.buttonSection .instruction {
+  margin-top: 1.4em;
+}
+
+.buttonSection .stockButton {
+  margin: 1em;
+  height: 4em;
+  width: 10em;
+  border-radius: 0.5em;
+  font-weight: 800;
+  color: red;
+  border-color: red;
+  background-color: white;
+}
+
+.buttonSection .stockButton:hover {
+  background-color: rgb(243, 216, 216);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.spinnerSection {
+  margin-bottom: 10em;
+}
+
+#chart {
+  margin-top: 10em;
+}
+
+/* Animation Section  */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
